@@ -1,0 +1,18 @@
+<div class="row top">
+  <div class="col-lg-8 col-md-8 col-sm-7 col-left">
+    <div class="name"><%= link_to "Nicole Haskins", root_url %></div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-5 col-right">
+    <nav>
+      <ul class="list-inline" id="menu">
+        <li class="<%= 'active' if controller_name=='pages' && action_name=='index' %>"><%= link_to "work", root_url %></li>
+        <li class="<%= 'active' if controller_name=='news' %>"><%= link_to "news", news_index_path %></li>
+        <li class="<%= 'active' if controller_name=='pages' && action_name=='contact' %>"><%= link_to "contact", contact_path %></li>
+        <li class="last">
+          <a href="#"><img class="social" src="img/icon/icon-facebook.png" alt="facebook"></a>
+          <a href="#"><img class="social" src="img/icon/icon-twitter.png" alt="twitter"></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>

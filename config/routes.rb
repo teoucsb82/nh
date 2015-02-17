@@ -1,5 +1,9 @@
 Nh::Application.routes.draw do
+  resources :news
+  resources :works
+  get '/contact' => 'pages#contact'
   root 'pages#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
